@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create an account!</title>
+	<style>
+		fieldset input{
+			width: 200px;
+			height: 25px;
+			font-size: 13px;
+		}
+		button {
+			width: 250px;
+			height: 36px;
+			font-family: 'Baloo Tamma 2', cursive;
+			font-size: 22px;
+			text-align: center;
+		}
+		fieldset {
+			width: 400px;
+			text-align: center;
+			background-color: #DCDCDC;
+		}
+		div {
+			padding-left: 450px;
+			padding-top: 65px;
+		}
+		body {
+			font-family: 'Baloo Tamma 2', cursive;
+			font-size: 22px;
+		}
+		button {
+			background-color: #1E90FF;
+			opacity: 90%;
+		}
+	</style>
+	<script type="text/javascript">
+		function ViewHelloWorld ()
+		 {
+		 	alert("Congrats\nYour account is created!");
+		}
+		function ResetButton()
+		 {
+		 	var r = confirm("Are you sure you want to reset?\nAll your data will be deleted.");
+    		if (r==true) {
+    			window.location.reload();
+    		}
+		}
+	</script>
+</head>
+<body>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+	<div>
+<fieldset>
+	<legend style="align-self: center;"><img src="user.png" width="150" height="100"></legend>
+	<h1>Sign in</h1>
+<label for="text">Username:</label>
+<input type="text" name="name" placeholder="Username">
+<br><br>
+<label for="email">Email:</label>
+<input type="Email" name="email" placeholder="ex: myname@example.com">
+<br><br>
+<button onclick="ViewHelloWorld()">Submit</button>
+<button onclick="ResetButton()">Reset</button>
+</fieldset>
+</div>
+</body>
+</html>

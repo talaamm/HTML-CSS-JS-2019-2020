@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Calculator</title>
+	<style type="text/css">
+		body input {
+			font-family: 'Press Start 2P', cursive;
+			font-size: 24px;
+		}
+		input {
+			height: 60px;
+			width: 110px;
+		}
+		div {
+			padding-left: 400px;
+			padding-top: 20px;
+		}
+		#Clear , #finalresult {
+			background-color: #FF8C00;
+		}
+		form {
+			background-color: #808080;
+			width: 527px;
+		}
+		#display {
+			background-color: #F5F5F5;
+		}
+		body {
+			background-image: url("bkgrnd.png");
+			font-family: 'Press Start 2P', cursive;
+			font-size: 11px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function ClearAll(){
+			document.calculator.display.value=""
+		}
+		function MyName () {
+			var person = prompt("Enter your name please!", "");
+  				if (person) {
+   				 document.getElementById("naame").innerHTML =
+    			"Hello " + person + "! Thank you for choosing our website.";
+  }
+		}
+		function SquareRoot (){
+			var Y = document.calculator.display.value
+			var calculateSQR = Math.sqrt(Y)
+			document.calculator.display.value = calculateSQR;
+	}
+	function NombToPowerOf(){
+		var nomb1 = document.calculator.display.value
+		var resultt = Math.pow(nomb1 , "2" )
+		document.calculator.display.value = resultt;
+	}
+	</script>
+</head>
+<body>
+	<div>
+		<h1>Free-Online Calculator</h1>
+		<h2><a href="javascript: MyName()" style="color: black;">Click here</a> to enter your name!</h2>
+		<h3 id="naame"></h3>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<form name="calculator">
+	<table>
+<tr>
+<td colspan="4">
+<input type="text" name="display" id="display" class="result" disabled style="width: 515px; height: 60px;">
+</td>
+</tr>
+<tr>
+	<td><input type="button" name="Square Root" value=" &#8730" onclick="SquareRoot()"></td>
+	<td><input type="button" name="Power Of" value="x^2" onclick="NombToPowerOf()"></td>
+	<td><input type="button" name="pi" value="&#960" onclick="calculator.display.value += '3.14159265359'"></td>
+<td rowspan="2"><input type="button" name="Clear" value="C" onclick="ClearAll()" style="width: 110px; height: 120px;" id="Clear"></td>
+</tr>
+<tr>
+<td><input type="button" name="Seven" value="7" onclick="calculator.display.value += '7'"></td>
+<td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+<td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+</tr>
+<tr>
+<td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+<td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+<td><input type="button" name="six" value="6" onclick="calculator.display.value +='6'"></td>
+<td><input type="button" class="operator" name="division" value="&divide" onclick="calculator.display.value += '/'"></td>
+</tr>
+<tr>
+<td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+<td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+<td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+<td><input type="button" class="operator" name="multiply" value="X" onclick="calculator.display.value += '*'"></td>
+</tr>
+<tr>
+	<td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>	
+	<td><input type="button" name="twozeros" value="00" onclick="calculator.display.value += '00'"></td>
+	<td><input type="button" name="dot" value="." onclick="calculator.display.value += '.'"></td>
+	<td><input type="button" name="substract" value="-" onclick="calculator.display.value += '-'"></td>
+</tr>
+<tr>
+	<td colspan="3"><input type="button" style="width: 382px; height: 60px;" name="equal" value="=" id="finalresult" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+<td><input type="button" name="addition" value="+" onclick="calculator.display.value += '+'"></td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

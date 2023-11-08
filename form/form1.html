@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style> 
+#body1, #body2{
+	padding-top: 20px;
+	text-align: center;
+} 
+body {
+	background-image: url("realone.jpg");
+	background-repeat: no-repeat;
+	background-size: 1850px 1000px;
+}
+
+
+	</style>
+</head>
+<body>
+	<div id="body1">
+	<h1>Conference Online Registration Form</h1>
+	<h4>Please fill the form below. We will contact you as soon as possible!</h4>
+</div>
+<div id="body2">
+<form action="submit.php" method="GET">
+	<label for="text">Name:</label>
+	<input type="text" name="name" placeholder="First Name">
+	<input type="text" name="name" placeholder="Last Name">
+<br><br>
+<label>Age:</label>
+<input type="Number" name="age" min="10" max="18">
+<br><br>
+<label for="date">Birthdate:</label>
+<input type="date" name="bdate">
+<br><br>
+<label for="file">Upload a photo for yourself:</label>
+<input type="file" name="file">
+<br><br>
+<label for="Email">Email:</label>
+<input type="Email" name="email" placeholder="ex: example@gmail.com">
+<br><br>
+<label>Where are you from?</label>
+<select name="country" size="1">
+<option value="none">Choose country</option> 
+<option value="Australia">Australia</option> 
+<option value="berlin">Berlin</option> 
+<option value="China">China</option> 
+<option value="France">France</option>
+<option value="Italy">Italy</option> 
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option> 
+<option value="Lebanon">Lebanon</option>
+<option value="Palestine">Palestine</option> 
+<option value="Russia">Russia</option>
+<option value="SA">Saudi-Arabia</option> 
+<option value="Turkey">Turkey</option>
+<option value="USA">United States of America</option> 
+<option value="UAE">United Arab Emirates</option>
+</select>
+<br><br>
+<label for="gender">Gender:</label>
+<input type="radio" name="female">Female
+<input type="radio" name="male">Male
+<br><br>
+<label for="Phone">Phone Number:</label>
+<input type="tel" name="numberph" placeholder="123-456-7890">
+<br><br>
+<label for="textarea">Tell us about your MUN experience:</label>
+<br>
+<textarea name="experience" cols="25" rows="8"></textarea>
+<br><br>
+<label for="color">What color of T-shirt you prefer?</label>
+<input type="color" name="tshirtcolor">
+<br><br>
+<label for="size">What is Your Size?</label>
+<br>
+<input type="checkbox" name="s">Small
+<input type="checkbox" name="l">Large
+<input type="checkbox" name="xl">X-Large
+<input type="checkbox" name="xxl">XX-Large
+<input type="checkbox" name="other">Other...
+<br><br>
+<label for="url">Add your school URL:</label>
+<input type="URL" name="school" placeholder="www.school-example.com">
+<br><br>
+<label>Credit Card number:</label>
+<input type="password" name="visa" placeholder="XXXX-XXXX-XXXX-XXXX">
+<br><br>
+<input type="Submit" name="Send" value="Send">
+<input type="Reset" name="Reset" value="Reset">
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign-in to our hotel</title>
+	<style>
+		fieldset {
+			text-align: left;
+			width: 500px;
+			margin: auto;
+		}
+		body {
+			font-family: 'Baloo Tamma 2', cursive;
+			background-image: url("wallpaper.jpg");
+			font-size: 24px;
+		}
+		h1, h2, h4 {
+			text-align: center;
+		}
+		#video1 {
+			padding-left: 70px;
+		}
+		fieldset input[type=submit] {
+			width: 500px;
+			height: 25px;
+		}
+		fieldset input, select, textarea{
+			width: 200px;
+			height: 25px;
+			background-color: #FFFAF0;
+		}
+		#div1{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+	<h1>Myraa Hotel</h1>
+	<h4>Thank you for choosing our hotel! To book a room, please fill the form below:</h4>
+	<div id="div1">
+	<label>Search</label>
+	<input type="Search" name="Search" placeholder="enter a keyword" >
+	<input type="submit" value="Search">
+	</div>
+	<fieldset>
+	<legend>Personal Information</legend>
+	<label for="text">Name:</label>
+	<input type="text" name="name" placeholder="First Name">
+	<input type="text" name="name" placeholder="Last Name">
+<br><br>
+<label for="email">E-mail:</label>
+<input type="email" name="email" placeholder="ex: myname@example.com">
+<br><br>
+</fieldset>
+<fieldset>
+	<legend> Hotel Booking </legend>
+<label for="select">Room type:</label>
+<select name="room" size="1">
+	<option value="#">Choose a type</option>
+	<option value="1p">Private room (1 person)</option>
+	<option value="2p">Standard room (1-2 people)</option>
+	<option value="3p">Standard room (1-3 people)</option>
+	<option value="family">Family room (1-4 people)</option>
+</select>
+<br><br>
+<label for="number">Number of rooms:</label>
+<input type="Number" name="no" min="1" max="40">
+<br><br>
+<label for="date">Arrival Date:</label>
+<input type="date" name="arrivaldate">
+<br><br>
+<label for="date">Departure Date:</label>
+<input type="date" name="Departuredate">
+<br><br>
+<label for="radio">Free Pickup?</label><br>
+<input style="width: 25px; height: 20px;" type="radio" name="yes">Yes Please! - Pick me up on arrival<br>
+<input style="width: 25px; height: 20px;" type="radio" name="no">No Thanks - I'll make my own way there
+<br><br>
+<label for="fn">Flight Number</label>
+<input type="text" name="flight no.">
+<br><br>
+<label>Special Requests:</label><br>
+<textarea style="width: 350px; height: 70px;" cols="35" rows="7"></textarea>
+<br><br>
+<h2>Get Directions To Our Hotel!!</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.8607584517704!2d28.252151015302974!3d36.84581067993916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bfbe7e48d98017%3A0xeb35e2e2975cee08!2sMyra%20Hotel!5e0!3m2!1sen!2s!4v1588250833548!5m2!1sen!2s" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<br><br>
+<input type="Submit" name="Send" value="Send">
+</fieldset>
+<h2>Watch These Videos For Extra Information!</h2>
+<iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/4khBcsK-UgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<video id="video1" width="560" height="315" controls>
+  <source src="hotel.mp4" type="video/mp4">
+</video>
+</body>
+</html>
